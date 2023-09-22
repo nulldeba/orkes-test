@@ -1,38 +1,56 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  /* background-color: ; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #282c34;
+  width: 100%;
+  min-width: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.news-card {
+  width: 100%;
+  max-width: 800px;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto;
+  overflow: hidden;
+  /* border: 2px solid #ddd; */
+  padding: 10px;
+  /* font-family: monospace; */
+  border: 2px solid lightgray;
+  padding: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.news-image {
+  border-radius: 35px;
+  /* width: 100%; */
+  display: block;
+  /* max-width: 150px; */
+  height: 100%;
+  object-fit: cover;
+}
+
+.news-title {
+  line-height: 1.5em;
+  height: 3em;
+  overflow: hidden;
+  font-weight: 900;
+  font-family: monospace;
+  color: #292c33;
+}
+.news-time {
+  font-family: monospace;
+  color: #68696a;
+  font-weight: 700;
+  font-size: x-large;
+}
+
+.news-content {
+  margin-left: 25px;
 }
